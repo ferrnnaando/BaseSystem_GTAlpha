@@ -1,29 +1,90 @@
-﻿using GTANetworkAPI;
-using System;
+﻿using System;
+using System.Linq;
+using GTANetworkAPI;
+using GTANetworkMethods;
+using Player = GTANetworkAPI.Player;
 
 namespace BaseSystem.Commands
 {
     internal class UserCommands : Script
     {
-        [Command("ame", "~r~Uso:~w~ /ame [action]", GreedyArg = true)]
-        public void MeCommand(Player player, string action)
+        /*[Command(Utils.Commands.Health.CommandName, Utils.Commands.Health.CommandUsage, Description = Utils.Commands.Health.CommandDescription)]
+        public void GiveHealthToSomeones(Player player, int targetPlayerId)
         {
-            action = action.Trim();
             Utils.CheckPermsSystem.checkAdminPerms(player);
-            player.SendChatMessage($"~p~/me {action}");
-            var targetRadius = NAPI.Player.GetPlayersInRadiusOfPlayer(5.0, player);
-            //how to make a gta notify mobile sound replays
-            foreach(Player target in targetRadius)
+            NetHandle handlerTarget = NAPI.Pools.GetAllPlayers().FirstOrDefault(p => p.Value == targetPlayerId).Handle;
+            Player PlayerTarget = NAPI.Player.GetPlayerFromHandle(handlerTarget);
+
+            if (PlayerTarget.IsNull)
             {
-                /*if (target == player) { } else*/ target.SendChatMessage($"~r~[ME] - {player.Handle}: *{action}*");
+                player.SendChatMessage("El jugador especificado no está en línea o no es válido.");
             }
+            else
+            {
+                PlayerTarget.Health = 100;
+            }
+            return;
+        }*/
 
-            Vector3 labelPosition = new Vector3(player.Position.X, player.Position.Y, player.Position.Z + 1.0f); // Adjust the Z position as needed
+        [Command(Utils.Commands.Kill.CommandName, Description = Utils.Commands.Kill.CommandDescription)]
+        public void killSomeones(Player player, int targetId)
+        {
+            Utils.CheckPermsSystem.checkAdminPerms(player);
+            /*targetID.ToLower;
+            if(targetID == "me")
+            {*/
+            player.Kill();
+            /*} else
+            {
 
-            Entity messageLabel = NAPI.TextLabel.CreateTextLabel($"{action}", labelPosition, 20.0f, 2.0f, 0, new Color(255, 255, 219), true, player.Dimension);
-            
-            NAPI.Entity.DeleteEntity(messageLabel);
+            }*/
             return;
         }
+
+        [Command("revive")]
+        public void reviveSomeones(Player player)
+        {
+            Utils.CheckPermsSystem.checkAdminPerms(player);
+            //player.Id; diference between player id and handler id, and what is nethandle
+            return;
+        }
+
+
+        /*[Command("freeze")]
+        public void FreezeCommand(Player sender, bool frozen)
+        {
+            NAPI.Player.Freeze(sender, frozen); 
+        }*/
+
+        [Command("kick", Alias = "kickear, expulsar")]
+        public void KickSomeones(Player player, int targetId, string reason)
+        {
+            Utils.CheckPermsSystem.checkAdminPerms(player);
+            player.Kick(reason);
+            return;
+        }
+
+        /*[Command("ban", Alias ="banear")]
+        public void BanSomeones(Player player, int targetId, string reason)
+        {
+            Utils.CheckPermsSystem.checkAdminPerms(player);
+            player.Ban($"Has sido baneado por el STAFF {reason}");
+            return;
+        }
+
+        [Command("unban", Alias ="desbanear")]
+        public void UnbanSomeones(Player player, int targetId, string reason)
+        {
+            
+            return;
+        }
+
+        [Command("setwantedlevel")]
+        public void SetWantedLevel(Player player, int targetId, string reason)
+        {
+            Utils.CheckPermsSystem.checkAdminPerms(player);
+            return;
+        }*/
+
     }
 }

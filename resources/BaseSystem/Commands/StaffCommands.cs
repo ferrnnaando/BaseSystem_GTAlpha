@@ -5,7 +5,7 @@ using Player = GTANetworkAPI.Player;
 
 namespace BaseSystem.Commands
 {
-    internal class StaffManagement : Script
+    internal class StaffCommands : Script
     {
         [Command("time", "~r~Uso:~w~ /time [day/night]", Alias = "tiempo")]
         public void timeSet(Player player, string day_night)
@@ -27,24 +27,25 @@ namespace BaseSystem.Commands
             return;
         }
 
-        [Command("car", "~r~Uso:~w~ /car [modelo]", Alias = "coche")]
+        [Command(Utils.Commands.Car.CommandName, Utils.Commands.Car.CommandUsage)]
         public void SpawnCar(Player player, string carModel)
         {
             Utils.CheckPermsSystem.checkAdminPerms(player);
-            VehicleHash carHashModel = NAPI.Util.VehicleNameToModel(carModel); //Gets the hash of bus model
+            VehicleHash carHashModel = NAPI.Util.VehicleNameToModel(carModel);
             if (carHashModel.GetHashCode() == 0)
             {
                 player.SendChatMessage("~r~El modelo indicado no existe.");
             }
             else
             {
-                var vehicle = NAPI.Vehicle.CreateVehicle(carHashModel, player.Position, 0, 0, 0); //Creates a bus on the player's position
+                var vehicle = NAPI.Vehicle.CreateVehicle(carHashModel, player.Position, 0, 0, 0);
                 NAPI.Player.SetPlayerIntoVehicle(player, vehicle, 0);
+                player.SendNotification("Vehiculo generado con ~h~~g~éxito~s~.");
             }
             return;
         }
 
-        [Command("dv")]
+        [Command(Utils.Commands.Dv.CommandName, Description = Utils.Commands.Dv.CommandDescription)]
         public void DeleteCar(Player player)
         {
             Utils.CheckPermsSystem.checkAdminPerms(player);
@@ -62,7 +63,7 @@ namespace BaseSystem.Commands
             return;
         }
 
-        [Command("dvall")]
+        [Command(Utils.Commands.DvAll.CommandName, Description = Utils.Commands.DvAll.CommandDescription)]
         public void DeleteAllCars(Player player)
         {
             Utils.CheckPermsSystem.checkAdminPerms(player);
@@ -75,7 +76,7 @@ namespace BaseSystem.Commands
             }
         }
 
-        [Command("fix", Alias = "arreglarcoche")]
+        [Command(Utils.Commands.Fix.CommandName, Description = Utils.Commands.Fix.CommandDescription)]
         public void FixCar(Player player)
         {
             Utils.CheckPermsSystem.checkAdminPerms(player);

@@ -3,13 +3,13 @@ C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\ClassLibrary1\obj\Debug\ne
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\ClassLibrary1\obj\Debug\netcoreapp3.1\BaseSystem.AssemblyInfoInputs.cache
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\ClassLibrary1\obj\Debug\netcoreapp3.1\BaseSystem.AssemblyInfo.cs
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\ClassLibrary1\obj\Debug\netcoreapp3.1\BaseSystem.csproj.CoreCompileInputs.cache
+C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\bin\Debug\netcoreapp3.1\BaseSystem.deps.json
+C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\bin\Debug\netcoreapp3.1\BaseSystem.dll
+C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\bin\Debug\netcoreapp3.1\BaseSystem.pdb
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\obj\Debug\netcoreapp3.1\BaseSystem.csproj.AssemblyReference.cache
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\obj\Debug\netcoreapp3.1\BaseSystem.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\obj\Debug\netcoreapp3.1\BaseSystem.AssemblyInfoInputs.cache
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\obj\Debug\netcoreapp3.1\BaseSystem.AssemblyInfo.cs
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\obj\Debug\netcoreapp3.1\BaseSystem.csproj.CoreCompileInputs.cache
-C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\bin\Debug\netcoreapp3.1\BaseSystem.deps.json
-C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\bin\Debug\netcoreapp3.1\BaseSystem.dll
-C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\bin\Debug\netcoreapp3.1\BaseSystem.pdb
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\obj\Debug\netcoreapp3.1\BaseSystem.dll
 C:\Users\ferni\Desktop\RageMP_Server\dotnet\resources\BaseSystem\obj\Debug\netcoreapp3.1\BaseSystem.pdb
