@@ -1,0 +1,4 @@
+﻿<meta>
+    <info name="BaseSystem" description="Your gamemode description" />
+	<script src="bin/Debug/netcoreapp3.1/BaseSystem.dll"/>
+</meta>

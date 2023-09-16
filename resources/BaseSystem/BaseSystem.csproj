@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="gtanetwork.api" Version="0.3.7" />
+    <PackageReference Include="RAGEMP-Bootstrapper" Version="1.1.3" />
+  </ItemGroup>
+
+</Project>
