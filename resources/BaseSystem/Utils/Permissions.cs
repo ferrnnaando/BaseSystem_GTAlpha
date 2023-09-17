@@ -12,7 +12,7 @@ namespace BaseSystem.Utils
 
     public class CheckPermsSystem
     {
-        public static bool checkAdminPerms(GTANetworkAPI.Player player)
+        public static bool CheckAdminPerms(GTANetworkAPI.Player player)
         {
             if (NAPI.Player.GetPlayerSerial(player) != Utils.AdministratorsLicense.licenses[0])
             {

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "2zi1HFK9RMryz7PyS9AbYBWsF7MC8v/P0GB8eVGPKdQdzFnozrwAAmXQh086tl3cbl6tV8MmXAjO8gEaQZr1WA==",
+  "dgSpecHash": "wHvxp5/v3PwGJo31nV5YXfaFTOECEELoMtTH9EkkB12Gz+Ydal0yWqDSR7Bi0BZ1w9jwdYtDgNePWOpDAb9rKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ferni\\Desktop\\RageMP_Server\\dotnet\\resources\\BaseSystem\\BaseSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferni\\.nuget\\packages\\gtanetwork.api\\0.3.7\\gtanetwork.api.0.3.7.nupkg.sha512",
-    "C:\\Users\\ferni\\.nuget\\packages\\ragemp-bootstrapper\\1.1.3\\ragemp-bootstrapper.1.1.3.nupkg.sha512"
+    "C:\\Users\\ferni\\.nuget\\packages\\ragemp-bootstrapper\\1.1.3\\ragemp-bootstrapper.1.1.3.nupkg.sha512",
+    "C:\\Users\\ferni\\.nuget\\packages\\ragemp-ragesharp\\1.1.3\\ragemp-ragesharp.1.1.3.nupkg.sha512"
   ],
   "logs": []
 }
